@@ -142,7 +142,7 @@ header img{
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    min-height: 700px;
+    min-height: 500px;
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
     
 }
