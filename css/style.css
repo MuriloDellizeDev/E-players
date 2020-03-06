@@ -409,7 +409,9 @@ select{
 .form_cadastro .campo:nth-child(10) button{
     margin: auto;
 }
-
+header .fa-bars{
+    display: none;
+}
 
 /* INÍCIO RESPONSIVIDADE */
 /* 800px */
@@ -461,7 +463,40 @@ select{
         margin-left: 1em;
     }
     .resultado p{
-        
+        margin-top: 0.5em;
     }
                              
 }/*FIM MEDIA JQUERY 800PX*/
+
+@media(max-width:460px){
+    header .fa-bars{
+        color: var(--purple);
+        font-size: 3em;
+        display: block;
+    }
+    header .container div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    header .container div a{
+        margin-left: 7em;
+    }
+    #menu{
+        position: absolute;
+        top: 5.5em;
+        left: 0;
+        width: 100%;
+        background-color: var(--pink);
+    }
+    #menu ul{
+        flex-direction: column;
+        height: 300px;
+        margin-left: 1em;
+    }
+    #menu a{
+        display: block;
+        padding: 0.5em 0;
+    }
+}
